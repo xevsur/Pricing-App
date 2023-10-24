@@ -20,13 +20,14 @@
     appearance: none;
     width: 1.8rem;
     height: 1.8rem;
-    background: #80fff3;
+    background: #10d8c4;
     border-radius: 50%;
+    box-shadow: 0 2px 10px 5px rgba(16, 216, 196, 0.5);
     cursor: pointer;
     margin-top: -10px;
     position: relative;
     z-index: 1;
-    background-image: url("https://www.svgrepo.com/show/36786/left-and-right-small-triangular-arrows-couple.svg");
+    background-image: url("public/images/icon-slider.svg");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;

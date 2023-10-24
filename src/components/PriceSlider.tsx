@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./PriceSlider.css";
 
-const PriceSlider: React.FC = () => {
-  const [value, setValue] = useState(3);
+interface PriceSliderProps {
+  value: number;
+  onChange: (value: number) => void;
+}
 
+const PriceSlider: React.FC<PriceSliderProps> = ({ value, onChange }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(Number(e.target.value));
+    const newValue = Number(e.target.value);
+    onChange(newValue);
   };
 
   const getProgressWidth = () => {
