@@ -69,11 +69,49 @@ body {
   align-items: center;
   flex-direction: column;
   width: 89%;
-  height: 25.875rem;
+  height: 60%;
   min-height: 25.875rem;
   border-radius: 0.5rem;
   background: #fff;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.9);
   transform: translateY(10%);
   max-width: 33.75rem;
+  position: relative;
+}
+.PricingForm h2 {
+  color: #848ead;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.10713rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1.8rem;
+}
+
+.PricingForm p {
+  position: absolute;
+  color: #848ead;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  top: 7rem;
+}
+.PricingForm p span {
+  color: #293356;
+  text-align: right;
+  font-family: "Manrope";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.05rem;
+  padding-right: 0.5rem;
 }

@@ -1,0 +1,61 @@
+.CheckBox {
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.CheckBox.left {
+  background-color: #cfd8ef;
+}
+
+.CheckBox.right {
+  background-color: #10d8c4;
+}
+
+.slider {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  align-self: center;
+  margin-left: 3px;
+}
+
+.CheckBox.left .slider {
+  transform: translateX(0);
+}
+
+.CheckBox.right .slider {
+  transform: translateX(30px);
+}
+
+#monthP {
+  color: #848ead;
+  text-align: center;
+  font-family: "Manrope";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#yearP {
+  position: absolute;
+  color: #848ead;
+  font-family: "Manrope";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transform: translateX(-100px);
+  top: 0;
+  max-width: 100%;
+}
