@@ -66,9 +66,7 @@ function App() {
           <span>${price}</span>
           {isLeft ? "/month" : "/year"}
         </p>
-        <p>Monthly Billing</p>
         <CheckBox isLeft={isLeft} handleCheckbox={handleCheckbox} />
-        <p>Yearly Billing</p>
       </div>
     </div>
   );
