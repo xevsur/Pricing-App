@@ -1,0 +1,48 @@
+.range-slider-container {
+  position: relative;
+  width: 70%;
+  transform: translateY(-700%);
+}
+
+.range-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.5rem;
+  background: #ecf0fb;
+  border-radius: 5px;
+  outline: none;
+  margin: 0;
+  position: relative;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: #80fff3;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+    background-image: url("https://www.svgrepo.com/show/36786/left-and-right-small-triangular-arrows-couple.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    position: relative;
+  }
+}
+
+.progress-bar {
+  height: 0.5rem;
+  background: #a4f3eb;
+  top: 0.3rem;
+  left: 0;
+  border-radius: 5px;
+  position: absolute;
+}

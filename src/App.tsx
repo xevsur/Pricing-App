@@ -1,4 +1,5 @@
 import "./App.css";
+import PriceSlider from "./components/PriceSlider";
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       </div>
       <h1>Simple, traffic-based pricing</h1>
       <p>Sign-up for our 30-day trial. No credit card required. </p>
+      <div className="PricingForm">
+        <PriceSlider />
+      </div>
     </div>
   );
 }
