@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import PriceSlider from "./components/PriceSlider";
-import CheckBox from "./components/CheckBox";
+import PriceSlider from "./components/PriceSlider/PriceSlider";
+import CheckBox from "./components/CheckBox/CheckBox";
 
 const calculatePrice = (sliderValue: number, isDiscounted: boolean): number => {
   let price = 0;
@@ -67,6 +67,24 @@ function App() {
           {isLeft ? "/month" : "/year"}
         </p>
         <CheckBox isLeft={isLeft} handleCheckbox={handleCheckbox} />
+        <div className="BorderLine"></div>
+      </div>
+      <div className="Features">
+        <div className="feature">
+          <img src="/images/icon-check.svg" alt="check" />
+          <p>Unlimited websites</p>
+        </div>
+        <div className="feature">
+          <img src="/images/icon-check.svg" alt="check" />
+          <p>100% data ownership</p>
+        </div>
+        <div className="feature">
+          <img src="/images/icon-check.svg" alt="check" />
+          <p>Email reports</p>
+        </div>
+        <div className="ButtonDiv">
+          <button>Start my trial</button>
+        </div>
       </div>
     </div>
   );
