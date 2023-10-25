@@ -28,7 +28,7 @@
     margin-top: -10px;
     position: relative;
     z-index: 1;
-    background-image: url("public/images/icon-slider.svg");
+    background-image: url("./public/images/icon-slider.svg");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
