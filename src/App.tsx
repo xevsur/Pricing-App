@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import PriceSlider from "./components/PriceSlider/PriceSlider";
 import CheckBox from "./components/CheckBox/CheckBox";
