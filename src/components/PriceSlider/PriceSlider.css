@@ -23,15 +23,19 @@
     height: 1.8rem;
     background: #10d8c4;
     border-radius: 50%;
-    box-shadow: 0 2px 10px 5px rgba(16, 216, 196, 0.5);
     cursor: pointer;
     margin-top: -10px;
     position: relative;
+    box-shadow: 0 2px 10px 5px rgba(16, 216, 196, 0.5);
     z-index: 1;
     background-image: url("../../../images/icon-slider.svg");
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  &:active::-webkit-slider-thumb {
+    box-shadow: 0 2px 12px 7px rgba(16, 216, 196, 0.5);
   }
 
   &::-webkit-slider-runnable-track {
