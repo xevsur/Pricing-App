@@ -175,3 +175,32 @@ body {
 .ButtonDiv button:active {
   transform: scale(1.05);
 }
+
+
+
+
+@media screen and (min-width: 800px) {
+ .PricingForm h2{
+   left: 4rem;
+ }
+
+ .PricingForm p {
+  right: 4rem;
+  top: 1rem;
+ }
+ .BorderLine{
+    bottom: 14rem;
+ }
+ .Features{
+  left: -8rem;
+  bottom: 9rem;
+ }
+ .ButtonDiv{
+  position: absolute;
+  bottom: 1.8rem;
+  right: -16rem;
+ }
+ .feature{
+  padding-top: 1rem;
+ }
+}
