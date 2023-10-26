@@ -53,37 +53,48 @@ function App() {
   };
 
   return (
-    <div className="MainDiv">
-      <div className="bgRectangle">
-        <img src="/images/pattern-circles.svg" alt="crls" />
-      </div>
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required. </p>
-      <div className="PricingForm">
-        <h2>{h2Text}</h2>
-        <PriceSlider value={sliderValue} onChange={handleSliderChange} />
-        <p className="Price">
-          <span>${price}</span>
-          {isLeft ? "/month" : "/year"}
+    <div className="ParentDiv">
+      <div className="bgImage"></div>
+      <div className="MainDiv">
+        <img
+          src="/images/pattern-circles.svg"
+          alt="crls"
+          className="circleImg"
+        />
+        <h1>Simple, traffic-based pricing</h1>
+        <p className="headerP">
+          Sign-up for our 30-day trial. No credit card required.{" "}
         </p>
-        <CheckBox isLeft={isLeft} handleCheckbox={handleCheckbox} />
-        <div className="BorderLine"></div>
-      </div>
-      <div className="Features">
-        <div className="feature">
-          <img src="/images/icon-check.svg" alt="check" />
-          <p>Unlimited websites</p>
-        </div>
-        <div className="feature">
-          <img src="/images/icon-check.svg" alt="check" />
-          <p>100% data ownership</p>
-        </div>
-        <div className="feature">
-          <img src="/images/icon-check.svg" alt="check" />
-          <p>Email reports</p>
-        </div>
-        <div className="ButtonDiv">
-          <button>Start my trial</button>
+        <div className="PricingForm">
+          <div className="UpperDiv">
+            <h2>{h2Text}</h2>
+            <PriceSlider value={sliderValue} onChange={handleSliderChange} />
+            <p className="Price">
+              <span>${price}</span>
+              {isLeft ? "/month" : "/year"}
+            </p>
+          </div>
+          <CheckBox isLeft={isLeft} handleCheckbox={handleCheckbox} />
+          <div className="BorderLine"></div>
+          <div className="Features">
+            <div className="ColumnHeader">
+              <div className="feature">
+                <img src="/images/icon-check.svg" alt="check" />
+                <p>Unlimited websites</p>
+              </div>
+              <div className="feature">
+                <img src="/images/icon-check.svg" alt="check" />
+                <p>100% data ownership</p>
+              </div>
+              <div className="feature">
+                <img src="/images/icon-check.svg" alt="check" />
+                <p>Email reports</p>
+              </div>
+            </div>
+            <div className="ButtonDiv">
+              <button>Start my trial</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

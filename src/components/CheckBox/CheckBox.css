@@ -1,11 +1,10 @@
+
+
 .CheckBox {
-  position: relative;
-  bottom: 3rem;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  width: 50px;
-  height: 20px;
+  width: 35px;
   background-color: #ccc;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -35,32 +34,28 @@
 }
 
 .CheckBox.right .slider {
-  transform: translateX(30px);
+  transform: translateX(15px);
 }
 .billings {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  position: relative;
-  height: fit-content;
-  text-align: center;
+  justify-content: space-around;
+  width: 90%;
 }
 #monthP {
   color: #848ead;
-  text-align: center;
   font-family: "Manrope";
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  left: -1rem;
-  top: -4.2rem;
+  text-align: right;
+  margin: 0;
+  flex-grow: 1;
+  max-width: 36%;
 }
 .disc {
   width: fit-content;
   height: 1.1875rem;
-  flex-shrink: 0;
   border-radius: 0.59375rem;
   background: #feede8;
   color: #ff8d68;
@@ -70,21 +65,19 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  position: absolute;
-  right: -2.1rem;
-  top: -4.1rem;
-  display: flex;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 #yearP {
   color: #848ead;
-
+  text-align: left;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
+  font-family: "Manrope";
   line-height: normal;
-  right: 0rem;
-  top: -4.2rem;
+  margin: 0;
 }
 
 .disc span {
@@ -93,19 +86,20 @@
 
 @media screen and (min-width: 800px) {
   .disc span {
-    display: flex;
+   display: flex;
   }
 
   .disc {
-    right: -5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+  }
+  .billings{
+    justify-content: space-around;
   }
   #monthP {
-    left: -6rem;
+    max-width: 38%;
   }
   #yearP {
-    right: -0.5rem;
-  }
-  .CheckBox {
-    z-index: 2;
   }
 }
