@@ -190,11 +190,23 @@ body {
   justify-content: space-between;
   width: 85%;
  }
- .feature{
-  padding-top: 1rem;
+ .ColumnHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+ }
+ .feature p{
+  font-size: 1rem;
  }
  .PricingForm{
   width: 600px;
+ }
+ .headerP{
+  font-size: 1rem;
+ }
+ .MainDiv h1{
+  font-size: 1.75rem;
  }
  .UpperDiv{
   display: flex;
@@ -206,10 +218,19 @@ body {
   order: -1;
   text-align: center;
   padding: 0;
+  font-size: 1rem;
  }
  .UpperDiv h2{
   order: -1; 
   padding-top: 20px;
   padding-bottom: 16px;
+  font-size: 1rem;
+  padding-right: 7.8rem;
+ }
+ .ButtonDiv button{
+  width: 200px;
+  height: 50px;
+  border-radius: 22px;
+  font-size: 15px;
  }
 }

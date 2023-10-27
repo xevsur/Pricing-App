@@ -55,7 +55,7 @@
 }
 .disc {
   width: fit-content;
-  height: 1.1875rem;
+  height: 1.4rem;
   border-radius: 0.59375rem;
   background: #feede8;
   color: #ff8d68;
@@ -88,18 +88,27 @@
   .disc span {
    display: flex;
   }
-
+  .CheckBox{
+    width: 45px;
+  }
+  .CheckBox.right .slider {
+    transform: translateX(24px);
+  }
   .disc {
     display: flex;
     justify-content: space-between;
     width: 15%;
+    font-size: 0.875rem;
+    width: fit-content;
   }
   .billings{
     justify-content: space-around;
   }
   #monthP {
-    max-width: 38%;
+    max-width: 40%;
+    font-size: 1rem;
   }
   #yearP {
+    font-size: 1rem;
   }
 }
